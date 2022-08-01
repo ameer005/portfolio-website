@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* calibre normal */
+  @font-face {
+    font-family: "calibre";
+    font-weight: 400;
+    src: url("./fonts/Calibre/Calibre-Regular.woff") format("woff"),
+      url("./fonts/Calibre/Calibre-Regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "calibre";
+    font-weight: 500;
+    src: url("./fonts/Calibre/Calibre-Medium.woff") format("woff"),
+      url("./fonts/Calibre/Calibre-Medium.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "calibre";
+    font-weight: 600;
+    src: url("./fonts/Calibre/Calibre-Semibold.woff") format("woff"),
+      url("./fonts/Calibre/Calibre-Semibold.woff2") format("woff2");
+  }
+
+  /* sf mono */
+  @font-face {
+    font-family: "sfMono";
+    font-weight: 400;
+    src: url("./fonts/SFMono/SFMono-Regular.woff") format("woff"),
+      url("./fonts/SFMono/SFMono-Regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "sfMono";
+    font-weight: 600;
+    src: url("./fonts/SFMono/SFMono-Semibold.woff") format("woff"),
+      url("./fonts/SFMono/SFMono-Semibold.woff2") format("woff2");
+  }
+
+  body {
+    font-weight: 400;
+    line-height: 1;
+  }
+}
+
+/* UTILITIES CLASSES */
+
+.ut-animation {
+  @apply transition-all duration-200;
+}
+
+/* HEADER */
+
+.nav-links {
+  @apply text-colorSecondaryLight2 font-semibold hover:text-colorAccent;
+}
+
+.overlay {
+  @apply after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-colorAccent/50 after:z-20 after:transition-all after:duration-150
+  before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-colorPrimaryDark1/40  before:z-10 before:transition-all before:duration-150;
+}
