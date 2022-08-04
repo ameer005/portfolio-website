@@ -6,7 +6,7 @@ const App = () => {
   return (
     <main
       className="font-calibre min-h-screen bg-colorPrimaryDark2 text-colorNeutral
-                flex flex-col items-center pb-10"
+                flex flex-col items-center pb-10 px-16"
     >
       <Header />
 

@@ -47,6 +47,7 @@
   body {
     font-weight: 400;
     line-height: 1;
+    overflow-x: hidden;
   }
 }
 
@@ -63,6 +64,17 @@
 }
 
 .overlay {
-  @apply after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-colorAccent/50 after:z-20 after:transition-all after:duration-150
-  before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-colorPrimaryDark1/40  before:z-10 before:transition-all before:duration-150;
+  @apply lg:after:hidden after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-colorAccent/50 after:z-20 after:transition-all after:duration-150
+  lg:before:hidden before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-colorPrimaryDark1/40  before:z-10 before:transition-all before:duration-150;
+}
+
+.mobile-nav {
+}
+
+/* 700px */
+@media only screen and (max-width: 56.2em) {
+  .mobile-nav {
+    @apply fixed top-0 right-0 h-screen w-[50%] bg-colorPrimary flex-col justify-center transition-all duration-200
+    text-base;
+  }
 }

@@ -2,6 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    screens: {
+      "2xl": { max: "1535px" },
+      xl: { max: "1250px" },
+      lg: { max: "900px" },
+      md: { max: "450px" },
+      sm: { max: "300px" },
+    },
     extend: {
       colors: {
         colorPrimary: "#112240",
