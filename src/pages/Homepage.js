@@ -13,14 +13,14 @@ const Homepage = () => {
         <h3 className="text-base font-sfMono text-colorAccent mb-7">
           Hi, my name is
         </h3>
-        <h1 className="text-7xl font-semibold text-colorSecondaryLight2 mb-3">
+        <h1 className="text-7xl sm:text-6xl font-semibold text-colorSecondaryLight2 mb-3">
           Ameer khan.
         </h1>
-        <h1 className="text-7xl font-semibold text-colorSecondary max-w-[15ch] mb-3 leading-[.9]">
+        <h1 className="text-7xl sm:text-6xl font-semibold text-colorSecondary max-w-[15ch] mb-3 leading-[.9]">
           Frontend Web Developer
         </h1>
 
-        <p className="max-w-[51ch] leading-7 text-xl text-colorSecondary mb-16">
+        <p className="max-w-[51ch] leading-7 text-xl md:text-2xl text-colorSecondary mb-16">
           I'm a frontend web Developer who uses modern technologies to build
           beautiful and scalable Web Applications
         </p>
@@ -34,7 +34,7 @@ const Homepage = () => {
       </section>
 
       {/* Section Projects */}
-      <section className="mb-48">
+      <section className="mb-48 sm:mb-36">
         <div className="flex items-center gap-4 mb-16">
           <div className="flex gap-3 items-center font-sfMono">
             <div className="text-xl text-colorAccent ">01.</div>
@@ -81,11 +81,11 @@ const Homepage = () => {
       </section>
 
       {/* About Section */}
-      <section className="mb-48 self-center">
+      <section className="mb-48 sm:mb-36 self-center">
         <div className="flex items-center gap-4 mb-10">
           <div className="flex gap-3 items-center font-sfMono">
             <div className="text-xl text-colorAccent ">02.</div>
-            <div className="text-3xl font-calibre font-semibold text-colorSecondaryLight2 tracking-wider mt-2 ">
+            <div className="text-3xl font-calibre font-semibold text-colorSecondaryLight2 tracking-wider mt-2 w-[9ch]">
               About Me
             </div>
           </div>
@@ -93,7 +93,7 @@ const Homepage = () => {
         </div>
 
         <div className="flex gap-10">
-          <div className="flex flex-col gap-4 text-lg text-colorSecondary max-w-[38rem] ">
+          <div className="flex flex-col gap-4 text-lg md:text-2xl text-colorSecondary max-w-[38rem] ">
             <p>
               Hello, I'm{" "}
               <span className="text-colorAccent tracking-wide">Ameer Khan</span>
@@ -121,25 +121,25 @@ const Homepage = () => {
                   <div>
                     <AiOutlineCaretRight className="h-3 w-3 text-colorAccent" />
                   </div>
-                  <div className="text-sm">Javascript</div>
+                  <div className="text-sm md:text-base">Javascript</div>
                 </li>
                 <li className="flex gap-1 items-center">
                   <div>
                     <AiOutlineCaretRight className="h-3 w-3 text-colorAccent" />
                   </div>
-                  <div className="text-sm">Node.js</div>
+                  <div className="text-sm md:text-base">Node.js</div>
                 </li>
                 <li className="flex gap-1 items-center">
                   <div>
                     <AiOutlineCaretRight className="h-3 w-3 text-colorAccent" />
                   </div>
-                  <div className="text-sm">React</div>
+                  <div className="text-sm md:text-base">React</div>
                 </li>
                 <li className="flex gap-1 items-center">
                   <div>
                     <AiOutlineCaretRight className="h-3 w-3 text-colorAccent" />
                   </div>
-                  <div className="text-sm">Tailwind css</div>
+                  <div className="text-sm md:text-base">Tailwind css</div>
                 </li>
               </ul>
             </div>
@@ -148,17 +148,17 @@ const Homepage = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="flex flex-col items-center  mb-48 self-center text-center">
+      <section className="flex flex-col items-center  mb-48 sm:mb-36 self-center text-center">
         <div className="flex items-center gap-4 mb-5">
           <div className="flex gap-3 items-center font-sfMono">
             <div className="text-base text-colorAccent ">03.</div>
             <div className="text-base text-colorAccent ">What’s Next?</div>
           </div>
         </div>
-        <h2 className="text-6xl text-colorSecondaryLight2 font-semibold mb-6">
+        <h2 className="text-6xl lg:text-5xl text-colorSecondaryLight2 font-semibold mb-6">
           Get In Touch
         </h2>
-        <p className="leading-6 text-xl text-colorSecondary mb-10 w-full max-w-[55ch] ">
+        <p className="leading-6 text-xl md:text-2xl text-colorSecondary mb-10 w-full max-w-[55ch] ">
           Although I’m currently looking for new opportunities, my inbox is
           always open. Whether you have a question or just want to say hi, I’ll
           try my best to get back to you!

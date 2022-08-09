@@ -7,8 +7,8 @@ const ProjectCard = ({ title, description, image, live, github }) => {
   return (
     <main>
       <section className="grid grid-cols-2 lg:grid-cols-1 items-center p-4 border border-colorAccent/50 rounded-[5px] lg:mb-4">
-        <div className=" rounded-[5px] relative overflow-hidden  overlay hover:after:opacity-0 hover:before:opacity-0 ut-animation h-[20rem]">
-          <img src={image} alt="project" className="block " />
+        <div className=" rounded-[5px] relative overflow-hidden  overlay hover:after:opacity-0 hover:before:opacity-0 ut-animation ">
+          <img src={image} alt="project" />
         </div>
         <div className="px-10 py-7 lg:hidden">
           <div className="text-xs font-sfMono text-colorAccent mb-3">

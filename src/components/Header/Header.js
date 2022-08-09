@@ -15,7 +15,7 @@ const Header = () => {
       ></div>
       <ul
         className={`flex gap-7 lg:gap-10 items-center font-sfMono text-sm z-30 mobile-nav ${
-          openNav ? "lg:translate-x-[0rem]" : "lg:translate-x-[30rem]"
+          openNav ? "lg:translate-x-[0rem]" : "lg:translate-x-[40rem]"
         } `}
       >
         <li>
@@ -50,7 +50,7 @@ const Header = () => {
       </ul>
       <GiHamburgerMenu
         onClick={() => setOpenNav((prev) => !prev)}
-        className="h-8 w-8 hidden lg:block cursor-pointer z-40"
+        className="h-8 w-8 hidden lg:block cursor-pointer z-40 text-colorAccent"
       />
     </main>
   );

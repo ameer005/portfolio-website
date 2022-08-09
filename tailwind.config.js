@@ -6,8 +6,8 @@ module.exports = {
       "2xl": { max: "1535px" },
       xl: { max: "1250px" },
       lg: { max: "900px" },
-      md: { max: "450px" },
-      sm: { max: "300px" },
+      md: { max: "700px" },
+      sm: { max: "500px" },
     },
     extend: {
       colors: {
