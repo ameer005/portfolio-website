@@ -34,7 +34,7 @@ const Homepage = () => {
       </section>
 
       {/* Section Projects */}
-      <section className="mb-48 sm:mb-36">
+      <section className="mb-48 sm:mb-36" id="projects">
         <div className="flex items-center gap-4 mb-16">
           <div className="flex gap-3 items-center font-sfMono">
             <div className="text-xl text-colorAccent ">01.</div>
@@ -81,7 +81,7 @@ const Homepage = () => {
       </section>
 
       {/* About Section */}
-      <section className="mb-48 sm:mb-36 self-center">
+      <section className="mb-48 sm:mb-36 self-center" id="about">
         <div className="flex items-center gap-4 mb-10">
           <div className="flex gap-3 items-center font-sfMono">
             <div className="text-xl text-colorAccent ">02.</div>
@@ -148,7 +148,10 @@ const Homepage = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="flex flex-col items-center  mb-48 sm:mb-36 self-center text-center">
+      <section
+        className="flex flex-col items-center  mb-48 sm:mb-36 self-center text-center"
+        id="contact"
+      >
         <div className="flex items-center gap-4 mb-5">
           <div className="flex gap-3 items-center font-sfMono">
             <div className="text-base text-colorAccent ">03.</div>
@@ -164,7 +167,8 @@ const Homepage = () => {
           try my best to get back to you!
         </p>
         <a
-          href="/"
+          rel="noopener noreferrer"
+          href="mailto:ameerkhan74164@gmail.com"
           className="text-sm font-sfMono text-colorAccent py-[18px] px-8 border border-colorAccent rounded-md hover:bg-colorAccent/5 ut-animation"
         >
           Say Hello
