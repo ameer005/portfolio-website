@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineCaretRight } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import entertainmentApp from "../assets/entertainment-web-app.png";
@@ -10,27 +11,50 @@ const Homepage = () => {
   return (
     <main className="flex flex-col">
       <section className=" h-[87vh] ">
-        <h3 className="text-base font-sfMono text-colorAccent mb-7">
+        <motion.h3
+          initial={{ y: "25px", opacity: 0 }}
+          animate={{ y: "0", opacity: 1 }}
+          transition={{ duration: ".3", delay: "1" }}
+          className="text-base font-sfMono text-colorAccent mb-7"
+        >
           Hi, my name is
-        </h3>
-        <h1 className="text-7xl sm:text-6xl font-semibold text-colorSecondaryLight2 mb-3">
+        </motion.h3>
+        <motion.h1
+          initial={{ y: "25px", opacity: 0 }}
+          animate={{ y: "0", opacity: 1 }}
+          transition={{ duration: ".4", delay: "1" }}
+          className="text-7xl sm:text-6xl font-semibold text-colorSecondaryLight2 mb-3"
+        >
           Ameer khan.
-        </h1>
-        <h1 className="text-7xl sm:text-6xl font-semibold text-colorSecondary max-w-[15ch] mb-3 leading-[.9]">
+        </motion.h1>
+        <motion.h1
+          initial={{ y: "25px", opacity: 0 }}
+          animate={{ y: "0", opacity: 1 }}
+          transition={{ duration: ".5", delay: "1" }}
+          className="text-7xl sm:text-6xl font-semibold text-colorSecondary max-w-[15ch] mb-3 leading-[.9]"
+        >
           Frontend Web Developer
-        </h1>
+        </motion.h1>
 
-        <p className="max-w-[51ch] leading-7 text-xl md:text-2xl text-colorSecondary mb-16">
+        <motion.p
+          initial={{ y: "25px", opacity: 0 }}
+          animate={{ y: "0", opacity: 1 }}
+          transition={{ duration: ".6", delay: "1" }}
+          className="max-w-[51ch] leading-7 text-xl md:text-2xl text-colorSecondary mb-16"
+        >
           I'm a frontend web Developer who uses modern technologies to build
           beautiful and scalable Web Applications
-        </p>
+        </motion.p>
 
-        <a
+        <motion.a
+          initial={{ y: "25px", opacity: 0 }}
+          animate={{ y: "0", opacity: 1 }}
+          transition={{ duration: ".6", delay: "1" }}
           href="https://github.com/ameer005?tab=repositories"
           className="text-sm font-sfMono text-colorAccent py-[18px] px-8 border border-colorAccent rounded-md hover:bg-colorAccent/5 ut-animation"
         >
           Check out my Work
-        </a>
+        </motion.a>
       </section>
 
       {/* Section Projects */}

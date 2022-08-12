@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -30,8 +31,15 @@ const Header = ({ openNav, setOpenNav }) => {
   };
 
   return (
-    <main className="py-7 px-16 xl:px-0 flex items-center justify-between w-full  mb-7">
-      <div className="text-2xl">logo</div>
+    <main className="py-7 px-16 xl:px-0 flex items-center justify-between w-full  mb-10">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: ".3" }}
+        className="text-2xl"
+      >
+        logo
+      </motion.div>
       <div
         className={`fixed top-0 left-0 right-0 bottom-0 bg-colorPrimaryDark1/40 backdrop-blur-sm z-20 ${
           !openNav && "hidden"
@@ -43,7 +51,11 @@ const Header = ({ openNav, setOpenNav }) => {
           openNav ? "lg:translate-x-[0rem]" : "lg:translate-x-[40rem]"
         } `}
       >
-        <li>
+        <motion.li
+          initial={{ y: "-45px", opacity: 0 }}
+          animate={{ y: "0", opacity: 1 }}
+          transition={{ duration: ".4" }}
+        >
           <HashLink
             onClick={() => closeNav()}
             smooth
@@ -53,8 +65,12 @@ const Header = ({ openNav, setOpenNav }) => {
             <div className="text-colorAccent">01.</div>
             <div className="nav-links ut-animation">About</div>
           </HashLink>
-        </li>
-        <li>
+        </motion.li>
+        <motion.li
+          initial={{ y: "-45px", opacity: 0 }}
+          animate={{ y: "0", opacity: 1 }}
+          transition={{ duration: ".5" }}
+        >
           <HashLink
             onClick={() => closeNav()}
             to="#projects"
@@ -64,8 +80,12 @@ const Header = ({ openNav, setOpenNav }) => {
             <div className="text-colorAccent">02.</div>
             <div className="nav-links ut-animation">Projects</div>
           </HashLink>
-        </li>
-        <li>
+        </motion.li>
+        <motion.li
+          initial={{ y: "-45px", opacity: 0 }}
+          animate={{ y: "0", opacity: 1 }}
+          transition={{ duration: ".6" }}
+        >
           <HashLink
             onClick={() => closeNav()}
             to={"#contact"}
@@ -75,12 +95,16 @@ const Header = ({ openNav, setOpenNav }) => {
             <div className="text-colorAccent">03.</div>
             <div className="nav-links ut-animation">Contact</div>
           </HashLink>
-        </li>
-        <li>
+        </motion.li>
+        <motion.li
+          initial={{ y: "-45px", opacity: 0 }}
+          animate={{ y: "0", opacity: 1 }}
+          transition={{ duration: ".7" }}
+        >
           <button className="text-colorAccent px-4 lg:px-8 py-[8px] border border-colorAccent rounded-md hover:bg-colorAccent/5 ut-animation">
             Resume
           </button>
-        </li>
+        </motion.li>
       </ul>
       <div ref={menuBtnRef} className="hidden lg:block z-40">
         <GiHamburgerMenu
