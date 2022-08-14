@@ -81,14 +81,14 @@ const Homepage = () => {
           <ProjectCard
             title="Audiophile E-commerce store"
             image={audiophileImg}
-            description="Audiophile is an E-commerce store for music enthusiast who wants to enjoy listening to music in high quality."
+            description="Audiophile is an E-commerce store for music enthusiasts who wants to enjoy listening to music in high quality."
             github="https://github.com/ameer005/audiophile-e-commerce-website"
             live="https://audiophile-ecommerce-ameer005.netlify.app/"
           />
           <ProjectCard
             title="Invoice App"
             image={invoiceImg}
-            description="A Web App for taking care of your all invoices. You can create new invoice, mark them as paid or pending, see all the details related to the invoice etc."
+            description="A Web App for taking care of all your invoices. You can create new invoice, mark them as paid or pending, see all the details related to them etc."
             github="https://github.com/ameer005/invoice-app"
             live="https://invoice-ameer005.netlify.app/"
           />
