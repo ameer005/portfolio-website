@@ -74,30 +74,21 @@ const Homepage = () => {
           <ProjectCard
             title="Entertainment Web App"
             image={entertainmentApp}
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-          harum quaerat fugiat, fugit nam enim voluptates qui quas ex, quisquam
-          atque omnis, excepturi consequatur quidem voluptatem nihil
-          reprehenderit dignissimos libero."
+            description="A app where you can get all the details about your favorite TV Servies/Movies. You can also see which movies are trending right now and much more."
             github="https://github.com/ameer005/entertainment-web-app"
             live="https://entertainment-web-app-005.netlify.app/"
           />
           <ProjectCard
             title="Audiophile E-commerce store"
             image={audiophileImg}
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-          harum quaerat fugiat, fugit nam enim voluptates qui quas ex, quisquam
-          atque omnis, excepturi consequatur quidem voluptatem nihil
-          reprehenderit dignissimos libero."
+            description="Audiophile is an E-commerce store for music enthusiast who wants to enjoy listening to music in high quality."
             github="https://github.com/ameer005/audiophile-e-commerce-website"
             live="https://audiophile-ecommerce-ameer005.netlify.app/"
           />
           <ProjectCard
             title="Invoice App"
             image={invoiceImg}
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-          harum quaerat fugiat, fugit nam enim voluptates qui quas ex, quisquam
-          atque omnis, excepturi consequatur quidem voluptatem nihil
-          reprehenderit dignissimos libero."
+            description="A Web App for taking care of your all invoices. You can create new invoice, mark them as paid or pending, see all the details related to the invoice etc."
             github="https://github.com/ameer005/invoice-app"
             live="https://invoice-ameer005.netlify.app/"
           />

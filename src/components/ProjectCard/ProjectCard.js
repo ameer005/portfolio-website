@@ -10,17 +10,19 @@ const ProjectCard = ({ title, description, image, live, github }) => {
         <div className=" rounded-[5px] relative overflow-hidden  overlay hover:after:opacity-0 hover:before:opacity-0 ut-animation ">
           <img src={image} alt="project" />
         </div>
-        <div className="px-10 py-7 lg:hidden">
-          <div className="text-xs font-sfMono text-colorAccent mb-3">
-            Featured Project
-          </div>
-          <h3 className="text-3xl text-colorSecondaryLight2 font-semibold mb-6">
-            {title}
-          </h3>
+        <div className="px-10 py-7 lg:hidden h-full flex flex-col justify-between">
+          <div>
+            <div className="text-xs font-sfMono text-colorAccent mb-3">
+              Featured Project
+            </div>
+            <h3 className="text-3xl text-colorSecondaryLight2 font-semibold mb-6">
+              {title}
+            </h3>
 
-          <p className="leading-6 text-lg text-colorSecondary mb-7">
-            {description}
-          </p>
+            <p className="leading-6 text-lg text-colorSecondary mb-7">
+              {description}
+            </p>
+          </div>
 
           <div className="flex items-center gap-3 ">
             <a

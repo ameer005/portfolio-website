@@ -36,7 +36,7 @@ const Header = ({ openNav, setOpenNav }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: ".3" }}
-        className="text-2xl"
+        className="text-2xl text-transparent"
       >
         logo
       </motion.div>
