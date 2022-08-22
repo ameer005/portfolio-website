@@ -10,7 +10,7 @@ import invoiceImg from "../assets/invoice-app.png";
 const Homepage = () => {
   return (
     <main className="flex flex-col">
-      <section className=" h-[87vh] ">
+      <section className=" h-[87vh]">
         <motion.h3
           initial={{ y: "25px", opacity: 0 }}
           animate={{ y: "0", opacity: 1 }}
