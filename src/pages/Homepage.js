@@ -47,6 +47,8 @@ const Homepage = () => {
         </motion.p>
 
         <motion.a
+          target="_blank"
+          rel="noopener noreferrer"
           initial={{ y: "25px", opacity: 0 }}
           animate={{ y: "0", opacity: 1 }}
           transition={{ duration: ".6", delay: "1" }}
@@ -108,7 +110,7 @@ const Homepage = () => {
         </div>
 
         <div className="flex gap-10">
-          <div className="flex flex-col gap-4 text-lg md:text-2xl text-colorSecondary max-w-[38rem] ">
+          <div className="flex flex-col gap-4 text-xl md:text-2xl text-colorSecondary max-w-[38rem] ">
             <p>
               Hello, I'm{" "}
               <span className="text-colorAccent tracking-wide">Ameer Khan</span>

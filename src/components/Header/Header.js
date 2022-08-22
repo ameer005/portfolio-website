@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
 
 import { HashLink } from "react-router-hash-link";
 
@@ -106,11 +107,13 @@ const Header = ({ openNav, setOpenNav }) => {
           </button>
         </motion.li>
       </ul>
-      <div ref={menuBtnRef} className="hidden lg:block z-40">
-        <GiHamburgerMenu
-          onClick={() => setOpenNav((prev) => !prev)}
-          className="h-8 w-8 cursor-pointer  text-colorAccent"
-        />
+
+      <div
+        onClick={() => setOpenNav((prev) => !prev)}
+        ref={menuBtnRef}
+        className="hidden lg:block z-40"
+      >
+        <GiHamburgerMenu className="h-8 w-8 cursor-pointer  text-colorAccent" />
       </div>
     </main>
   );
