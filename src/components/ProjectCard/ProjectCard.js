@@ -7,9 +7,12 @@ const ProjectCard = ({ title, description, image, live, github }) => {
   return (
     <main>
       <section className="grid grid-cols-2 lg:grid-cols-1 items-center p-4 border border-colorAccent/50 rounded-[5px] lg:mb-4">
+        {/* main project image */}
         <div className=" rounded-[5px] relative overflow-hidden  overlay hover:after:opacity-0 hover:before:opacity-0 ut-animation ">
-          <img src={image} alt="project" />
+          <img src={image} className="object-contain h-full" alt="project" />
         </div>
+
+        {/* project info and links for bigger screen */}
         <div className="px-10 py-7 lg:hidden h-full flex flex-col justify-between">
           <div>
             <div className="text-xs font-sfMono text-colorAccent mb-3">
@@ -45,6 +48,7 @@ const ProjectCard = ({ title, description, image, live, github }) => {
         </div>
       </section>
 
+      {/* project and live site link for smaller screen */}
       <section className="lg:flex items-center justify-between hidden ">
         <h3 className="text-xl text-colorSecondaryLight2 font-semibold  ">
           {title}

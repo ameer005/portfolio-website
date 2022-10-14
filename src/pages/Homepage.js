@@ -6,6 +6,7 @@ import ProjectCard from "../components/ProjectCard/ProjectCard";
 import entertainmentApp from "../assets/entertainment-web-app.png";
 import audiophileImg from "../assets/audiophille-e-commerse.png";
 import invoiceImg from "../assets/invoice-app.png";
+import kanbanImg from "../assets/kanban-task-manager.png";
 
 const Homepage = () => {
   return (
@@ -33,7 +34,7 @@ const Homepage = () => {
           transition={{ duration: ".5", delay: "1" }}
           className="text-7xl sm:text-6xl font-semibold text-colorSecondary max-w-[15ch] mb-3 leading-[.9]"
         >
-          Frontend Web Developer
+          Full Stack Web Developer
         </motion.h1>
 
         <motion.p
@@ -42,7 +43,7 @@ const Homepage = () => {
           transition={{ duration: ".6", delay: "1" }}
           className="max-w-[51ch] leading-7 text-xl md:text-2xl text-colorSecondary mb-16"
         >
-          I'm a frontend web Developer who uses modern technologies to build
+          I'm a full stack web Developer who uses modern technologies to build
           beautiful and scalable Web Applications
         </motion.p>
 
@@ -73,6 +74,13 @@ const Homepage = () => {
 
         {/* projects */}
         <div className="flex flex-col gap-14">
+          <ProjectCard
+            title="Kanban Task Manager"
+            image={kanbanImg}
+            description="A Task Manager web app built with MERN stack"
+            github="https://github.com/ameer005/kanban-task-manager"
+            live="https://kanban-task-manager-ameer005.netlify.app/board/6311ec26607217077930419a"
+          />
           <ProjectCard
             title="Entertainment Web App"
             image={entertainmentApp}
@@ -114,7 +122,7 @@ const Homepage = () => {
             <p>
               Hello, I'm{" "}
               <span className="text-colorAccent tracking-wide">Ameer Khan</span>
-              , a Frontend Web Developer.
+              , a Full Stack Web Developer.
             </p>
 
             <p>
@@ -157,6 +165,18 @@ const Homepage = () => {
                     <AiOutlineCaretRight className="h-3 w-3 text-colorAccent" />
                   </div>
                   <div className="text-sm md:text-base">Tailwind css</div>
+                </li>
+                <li className="flex gap-1 items-center">
+                  <div>
+                    <AiOutlineCaretRight className="h-3 w-3 text-colorAccent" />
+                  </div>
+                  <div className="text-sm md:text-base">Express.js</div>
+                </li>
+                <li className="flex gap-1 items-center">
+                  <div>
+                    <AiOutlineCaretRight className="h-3 w-3 text-colorAccent" />
+                  </div>
+                  <div className="text-sm md:text-base">MongoDB</div>
                 </li>
               </ul>
             </div>
