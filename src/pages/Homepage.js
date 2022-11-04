@@ -78,15 +78,15 @@ const Homepage = () => {
             title="BookishHead"
             image={bookishHead}
             description="A Website where you can search for your favourite books, get information about them, add them to your list etc."
-            github="https://github.com/ameer005/kanban-task-manager"
-            live="https://kanban-task-manager-ameer005.netlify.app/board/6311ec26607217077930419a"
+            github="https://github.com/ameer005/bookishhead"
+            live="https://bookishhead-front.vercel.app/"
           />
           <ProjectCard
             title="Kanban Task Manager"
             image={kanbanImg}
             description="A Task Manager web app built with MERN stack"
             github="https://github.com/ameer005/kanban-task-manager"
-            live="https://kanban-task-manager-ameer005.netlify.app/board/6311ec26607217077930419a"
+            live="https://kanban-task-manager-ameer005.netlify.app"
           />
           <ProjectCard
             title="Entertainment Web App"
