@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import entertainmentApp from "../assets/entertainment-web-app.png";
-import audiophileImg from "../assets/audiophille-e-commerse.png";
 import invoiceImg from "../assets/invoice-app.png";
 import kanbanImg from "../assets/kanban-task-manager.png";
+import bookishHead from "../assets/bookishHead.png";
 
 const Homepage = () => {
   return (
@@ -75,6 +75,13 @@ const Homepage = () => {
         {/* projects */}
         <div className="flex flex-col gap-14">
           <ProjectCard
+            title="BookishHead"
+            image={bookishHead}
+            description="A Website where you can search for your favourite books, get information about them, add them to your list etc."
+            github="https://github.com/ameer005/kanban-task-manager"
+            live="https://kanban-task-manager-ameer005.netlify.app/board/6311ec26607217077930419a"
+          />
+          <ProjectCard
             title="Kanban Task Manager"
             image={kanbanImg}
             description="A Task Manager web app built with MERN stack"
@@ -87,13 +94,6 @@ const Homepage = () => {
             description="A app where you can get all the details about your favorite TV Servies/Movies. You can also see which movies are trending right now and much more."
             github="https://github.com/ameer005/entertainment-web-app"
             live="https://entertainment-web-app-005.netlify.app/"
-          />
-          <ProjectCard
-            title="Audiophile E-commerce store"
-            image={audiophileImg}
-            description="Audiophile is an E-commerce store for music enthusiasts who wants to enjoy listening to music in high quality."
-            github="https://github.com/ameer005/audiophile-e-commerce-website"
-            live="https://audiophile-ecommerce-ameer005.netlify.app/"
           />
           <ProjectCard
             title="Invoice App"

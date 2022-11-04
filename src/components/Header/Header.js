@@ -5,6 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 
 import { HashLink } from "react-router-hash-link";
+import cv from "../../assets/cv.pdf";
 
 const Header = ({ openNav, setOpenNav }) => {
   const menuRef = useRef();
@@ -102,9 +103,13 @@ const Header = ({ openNav, setOpenNav }) => {
           animate={{ y: "0", opacity: 1 }}
           transition={{ duration: ".7" }}
         >
-          <button className="text-colorAccent px-4 lg:px-8 py-[8px] border border-colorAccent rounded-md hover:bg-colorAccent/5 ut-animation">
+          <a
+            href={cv}
+            download
+            className="text-colorAccent px-4 lg:px-8 py-[8px] border border-colorAccent rounded-md hover:bg-colorAccent/5 ut-animation"
+          >
             Resume
-          </button>
+          </a>
         </motion.li>
       </ul>
 
