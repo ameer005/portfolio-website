@@ -7,6 +7,7 @@ import entertainmentApp from "../assets/entertainment-web-app.png";
 import invoiceImg from "../assets/invoice-app.png";
 import kanbanImg from "../assets/kanban-task-manager.png";
 import bookishHead from "../assets/bookishHead.png";
+import mangatea from "../assets/mangatea.com_.png";
 
 const Homepage = () => {
   return (
@@ -75,6 +76,13 @@ const Homepage = () => {
         {/* projects */}
         <div className="flex flex-col gap-14">
           <ProjectCard
+            title="MangaTea"
+            image={mangatea}
+            description="A Website where you can read your favourite manga online."
+            github="https://github.com/ameer005"
+            live="https://mangatea.com"
+          />
+          <ProjectCard
             title="BookishHead"
             image={bookishHead}
             description="A Website where you can search for your favourite books, get information about them, add them to your list etc."
@@ -87,13 +95,6 @@ const Homepage = () => {
             description="A Task Manager web app built with MERN stack"
             github="https://github.com/ameer005/kanban-task-manager"
             live="https://kanban-task-manager-ameer005.netlify.app"
-          />
-          <ProjectCard
-            title="Entertainment Web App"
-            image={entertainmentApp}
-            description="A app where you can get all the details about your favorite TV Servies/Movies. You can also see which movies are trending right now and much more."
-            github="https://github.com/ameer005/entertainment-web-app"
-            live="https://entertainment-web-app-005.netlify.app/"
           />
           <ProjectCard
             title="Invoice App"

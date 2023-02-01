@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { AiFillGithub } from "react-icons/ai";
 import { BiLinkExternal } from "react-icons/bi";
@@ -8,9 +9,14 @@ const ProjectCard = ({ title, description, image, live, github }) => {
     <main>
       <section className="grid grid-cols-2 lg:grid-cols-1 items-center p-4 border border-colorAccent/50 rounded-[5px] lg:mb-4">
         {/* main project image */}
-        <div className=" rounded-[5px] relative overflow-hidden  overlay hover:after:opacity-0 hover:before:opacity-0 ut-animation ">
+        <a
+          href={live}
+          rel="noopener noreferrer"
+          target="_blank"
+          className="cursor-pointer rounded-[5px] relative overflow-hidden  overlay hover:after:opacity-0 hover:before:opacity-0 ut-animation "
+        >
           <img src={image} className="object-contain h-full" alt="project" />
-        </div>
+        </a>
 
         {/* project info and links for bigger screen */}
         <div className="px-10 py-7 lg:hidden h-full flex flex-col justify-between">
